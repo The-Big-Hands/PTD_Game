@@ -1,8 +1,9 @@
-// 주사위를 던진 결과 값을 반환해주는 함수(Roll)
-function rollDice(){
-  return Math.floor(Math.random() * 6)+1
-}
-console.log(rollDice())
+const rollbtn = document.getElementById('rollbtn'); 
+const bankBtn = document.getElementById('bankbtn');
+const gameBtn = document.getElementById('gamebtn');
+const diceimg = document.querySelector('.dice');
+
+
 
 // 게임: Player, Turn, Dice, Target Score 정보를 갖고있는 객체
 // turn이 0이면 Player1의 turn
@@ -47,4 +48,15 @@ class Player{
   addCurrent(score){
     this.currentScore+=score
   }
+}
+
+
+rollbtn.addEventListener('click', () => {
+  let n = rollDice();
+  diceimg.src = `/images/${n}.png`;
+})
+
+// 주사위를 던진 결과 값을 반환해주는 함수(Roll)
+function rollDice(){
+  return Math.floor(Math.random() * 6)+1
 }
