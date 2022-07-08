@@ -32,3 +32,19 @@ class Game{
     }
   }
 }
+// Player: 이름, 현재 점수, 총 점수 정보를 갖고있는 객체
+class Player{
+  constructor(name){
+    this.currentScore = 0
+    this.totalScore = 0
+    this.name = name
+  }
+  // 현재 점수를 총점에 더합니다.(Bank)
+  addTotal(){
+    this.totalScore+=this.currentScore
+  }
+  // 주사위 결과를 현재 점수에 더합니다.(Roll)
+  addCurrent(score){
+    this.currentScore+=score
+  }
+}
