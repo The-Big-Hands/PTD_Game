@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+body{
+  height:100vh;
+}
+
+#pig-container{
+  display: flex;
+}
+
+.player-name{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20%;
+}
+
+.player-score{
+  text-align: center;
+  font-size: 40px;
+}
+
+.bank-box{
+  margin: 100px auto;
+  text-align: center;
+  background-color: rgb(240, 192, 121);
+  width: 130px;
+  height: 130px;
+  border-radius: .4em;
+}
+
+.bank-name{
+  padding: 30px 0;
+  font-weight: bold;
+}
+
+.player-wrapper1{
+  width: 50%;
+  height: 100%;
+}
+
+.player-wrapper2{
+  width: 50%;
+  height: 100%;
+}
+
+.game-info{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  margin-top: 5%;
+}
+
+.newgame{
+  background-color: rgb(211, 255, 34);
+  border: 0;
+  font-size: large;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.roll{
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  background-color: rgb(218, 193, 241);
+  padding: 20px;
+}
+
+.bank{
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  background-color: rgb(218, 193, 241);
+  padding: 20px;
+}
+.score-select{
+  margin: 0 auto;
+}
+
+.score-select input{
+  cursor: pointer;
+}
+
