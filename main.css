@@ -17,19 +17,6 @@ body{
   width: 100%;
   display: flex;
 }
-.player-turn{
-  margin: 0 auto;
-  width: 100px;
-  height: 10px;
-  background-color: red;
-}
-
-.player-turn{
-  height: 10px;
-  width: 100px;
-  margin: 10px auto;
-  background-color: red;
-}
 
 .player-name{
   text-align: center;
@@ -45,6 +32,7 @@ body{
 .player-score{
   text-align: center;
   font-size: 40px;
+  font-weight: 700;
 }
 
 .bank-box{
@@ -57,8 +45,11 @@ body{
 }
 
 .bank-name{
-  padding: 30px 0;
+  padding: 20px 0;
   font-weight: bold;
+}
+.bank-score{
+  font-size: 34px;
 }
 
 .player-wrapper1{
@@ -83,11 +74,16 @@ body{
 }
 
 .newgame{
-  background-color: rgb(211, 255, 34);
+  background-color: rgb(207, 228, 122);
   border: 0;
   font-size: large;
+  font-weight: 700;
   cursor: pointer;
   padding: 20px;
+}
+.newgame:hover{
+  transform: scale(1.05);
+  background-color: rgb(129, 189, 177);
 }
 
 .roll{
